@@ -108,7 +108,13 @@ export function renderMenu({
             });
     
             translateMenu(menu);
-        })
+        });
+
+        saveSettings({
+            lang: $lang.value
+        });
+
+        translateMenu(menu);
     }
 
     container.appendChild(menu);

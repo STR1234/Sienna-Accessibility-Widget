@@ -2,16 +2,16 @@ export default [
     {
         label: 'Big Cursor',
         key: 'big-cursor',
-        icon: 'mouse',
+        icon: '/accessibility/icons/cursorIcon.svg',
     },
     {
         label: 'Stop Animations',
         key: 'stop-animations',
-        icon: 'motion_photos_off',
+        icon: '/accessibility/icons/stopAnimationsIcon.svg',
     },
     {
         label: 'Reading Guide',
         key: 'readable-guide',
-        icon: 'local_library',
+        icon: '/accessibility/icons/readingGuideIcon.svg',
     },
 ]

@@ -12,7 +12,7 @@
         background: #f9f9f9;
         width: 500px;
         line-height: 1;
-        font-size: 16px;
+        font-size: 1rem;
         height: calc(100% - 40px - 75px);
         letter-spacing: 0.015em;
         color: #000 !important;
@@ -47,7 +47,7 @@
     }
 
     .asw-card-title {
-        font-size: 20px;
+        font-size: 1.25rem;
         padding: 15px 0;
         font-weight: 700;
         color: #555;
@@ -56,7 +56,7 @@
     .asw-menu .asw-select {
         width: 100% !important;
         padding: 10px !important;
-        font-size: 16px !important;
+        font-size: 1rem !important;
         font-family: inherit !important;
         font-weight: 400 !important;
         border-radius: 4px !important;
@@ -84,7 +84,7 @@
         flex-direction: column;
         text-align: center;
         color: #333;
-        font-size: 16px !important;
+        font-size: 1rem !important;
         background: #fff;
         border: 1px solid #dedede;
         transition: all 0.3s ease;
@@ -93,21 +93,21 @@
     }
 
     .asw-btn .asw-translate {
-        font-size: 15px !important;
+        font-size: 0.9375rem !important;
     }
 
     .asw-btn .icons-sienna {
-        margin-bottom: 16px;
+        margin-bottom: 1rem;
     }
 
     .asw-btn:hover {
-        border-color: #0048ff;
+        border-color: #E899BF;
     }
 
     .asw-btn.asw-selected {
-        background: #0048ff;
+        background: #E899BF;
         color: white;
-        border-color: #0048ff;
+        border-color: #E899BF;
     }
 
     .asw-footer {
@@ -116,16 +116,16 @@
         left: 0;
         right: 0;
         background: #fff;
-        padding: 16px;
+        padding: 1rem;
         text-align: center;
         color: #333;
         border-top: 1px solid #eee;
     }
 
     .asw-footer a {
-        font-size: 14px !important;
+        font-size: 0.875rem !important;
         text-decoration: underline;
-        color: #0648ff;
+        color: #D95997;
         background: transparent !important;
         font-weight: 700;
     }
@@ -139,14 +139,14 @@
         overflow: scroll;
         max-height: calc(100% - 80px);
         color: #333;
-        padding: 15px 0;
+        padding: 0.9375rem 0;
     }
 
     .asw-adjust-font {
         background: #fff;
         border: 1px solid #dedede;
         padding: 20px;
-        margin-bottom: 16px;
+        margin-bottom: 1rem;
     }
 
     .asw-adjust-font .asw-label {
@@ -159,15 +159,15 @@
         justify-content: space-between;
         margin-top: 20px;
         align-items: center;
-        font-size: 15px;
+        font-size: 0.9375rem;
     }
 
     .asw-adjust-font .asw-label div {
-        font-size: 15px !important;
+        font-size: 0.9375rem !important;
     }
 
     .asw-adjust-font div[role="button"] {
-        background: #0648ff;
+        background: #E899BF;
         border-radius: 50%;
         width: 36px;
         height: 36px;
@@ -206,6 +206,25 @@
         }
 
     }
+
+    .icon-font-size-adjust {
+        padding-left: 0.1rem;
+    }
+
+    .icons-sienna {
+        width: 2rem;
+        height: 2rem;
+        pointer-events: none;
+    }
+
+    use {
+        width: 1.7rem;
+        height: 1.7rem;
+    }
+
+    .reset-and-close-menu {
+        padding-top: 0.4rem;
+    }
 </style>
 
 <div class="asw-menu">
@@ -214,15 +233,17 @@
             Accessibility Menu
         </div>
         <div>
-            <div role="button" class="asw-menu-reset" title="Reset settings">
-                <span class="icons-sienna">
-                    restart_alt
-                </span>
+            <div role="button" class="asw-menu-reset reset-and-close-menu" title="Reset settings">
+                <svg class="icons-sienna">
+                    <use xmlns:xlink="http://www.w3-org/1999/xlink" href="./../../icons/resetIcon.svg#reset-icon">
+                        Reset icon</use>
+                </svg>
             </div>
             <div role="button" class="asw-menu-close" title="Close">
-                <span class="icons-sienna">
-                    close
-                </span>
+                <svg class="icons-sienna">
+                    <use xmlns:xlink="http://www.w3-org/1999/xlink" href="./../../icons/closeIcon.svg#close-icon">Close
+                        icon</use>
+                </svg>
             </div>
         </div>
     </div>
@@ -237,8 +258,12 @@
             </div>
             <div class="asw-adjust-font">
                 <div class="asw-label" style="margin:0;">
-                    <span class="icons-sienna" style="margin-right:8px;">
-                        format_size
+                    <span style="margin-right:8px;">
+                        <svg class="icons-sienna">
+                            <use xmlns:xlink="http://www.w3-org/1999/xlink"
+                                href="./../../icons/fontSizeIcon.svg#font-size-icon">Font size
+                                icon</use>
+                        </svg>
                     </span>
                     <div class="asw-translate">
                         Adjust Font Size
@@ -247,18 +272,22 @@
                 <div>
                     <div class="asw-minus" data-key="font-size" role="button" aria-pressed="false"
                         title="Decrease Font Size">
-                        <span class="icons-sienna">
-                            remove
-                        </span>
+                        <svg class="icons-sienna icon-font-size-adjust">
+                            <use xmlns:xlink="http://www.w3-org/1999/xlink"
+                                href="./../../icons/subtractIcon.svg#subtract-icon">Minus
+                                icon</use>
+                        </svg>
                     </div>
                     <div class="asw-amount" style="font-weight:400;">
                         100%
                     </div>
                     <div class="asw-plus" data-key="font-size" role="button" aria-pressed="false"
                         title="Increase Font Size">
-                        <span class="icons-sienna">
-                            add
-                        </span>
+                        <svg class="icons-sienna icon-font-size-adjust">
+                            <use xmlns:xlink="http://www.w3-org/1999/xlink" href="./../../icons/addIcon.svg#add-icon">
+                                Plus
+                                icon</use>
+                        </svg>
                     </div>
                 </div>
             </div>
@@ -285,7 +314,7 @@
     </div>
 
     <div class="asw-footer">
-        <a href="https://accessibility-widget.pages.dev">Accessibility Widget by Sienna</a>
+        <a href="https://accessibility-widget.pages.dev">Accessibility Widget by Sienna - bobiennale edition</a>
     </div>
 </div>
 

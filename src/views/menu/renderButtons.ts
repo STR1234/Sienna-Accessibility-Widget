@@ -6,7 +6,7 @@ export default function renderButtons(buttons, btnClass?:string) {
 
         _html += `
             <button class="asw-btn ${ btnClass || '' }" type="button" data-key="${ x.key }" title="${ x.label }">
-                <img class="icons-sienna" src="${ x.icon }" />
+                <svg class="icons-sienna"><use xmlns:xlink="http://www.w3-org/1999/xlink" href="${ x.icon }#${x.key}">Icon symbolising ${ x.label }</use></svg>
                 <span class="asw-translate">${ x.label }</span>
             </button>
         `;

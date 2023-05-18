@@ -2,31 +2,31 @@ export default [
     {
         label: 'Monochrome',
         key: 'monochrome',
-        icon: 'filter_b_and_w',
+        icon: '/accessibility/icons/monochromeIcon.svg',
     },
     {
         label: 'Low Saturation',
         key: 'low-saturation',
-        icon: 'gradient',
+        icon: '/accessibility/icons/lowSaturationIcon.svg',
     },
     {
         label: 'High Saturation',
         key: 'high-saturation',
-        icon: 'filter_vintage',
+        icon: '/accessibility/icons/highSaturationIcon.svg',
     },
     {
         label: 'High Contrast',
         key: 'high-contrast',
-        icon: 'tonality',
+        icon: '/accessibility/icons/highContrastIcon.svg',
     },
     {
         label: 'Light Contrast',
         key: 'light-contrast',
-        icon: 'brightness_5',
+        icon: '/accessibility/icons/lightContrastIcon.svg',
     },
     {
         label: 'Dark Contrast',
         key: 'dark-contrast',
-        icon: 'nightlight',
+        icon: '/accessibility/icons/darkContrastIcon.svg',
     },
 ];

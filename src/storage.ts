@@ -11,7 +11,7 @@ const DEFAULT_SETTINGS: ISettings = {
 
 let settings: ISettings = DEFAULT_SETTINGS;
 
-export const COOKIE_KEY = "asw";
+export const COOKIE_KEY = "accessibility-tool-settings";
 
 export function saveState(payload): ISettings {
     const newSettings = {
@@ -51,7 +51,7 @@ export function getSettings(cache: boolean = true): ISettings {
         } else {
             settings = DEFAULT_SETTINGS;
         }
-        
+
         return settings;
     }
 }
