@@ -34,7 +34,7 @@ export const LANGUAGES: ILanguage[] = [
   },
   {
     code: 'de',
-    label: 'German',
+    label: 'Deutsch',
   },
   {
     code: 'en',

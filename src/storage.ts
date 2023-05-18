@@ -22,7 +22,9 @@ export function saveState(payload): ISettings {
         },
         updatedAt: new Date()
     };
+
     saveSettings(newSettings);
+
     return newSettings;
 }
 
@@ -31,6 +33,7 @@ export function saveSettings(newSettings: any): void {
         ...settings,
         ...newSettings
     };
+
     setCookie(COOKIE_KEY, JSON.stringify(settings));
 }
 
@@ -48,6 +51,7 @@ export function getSettings(cache: boolean = true): ISettings {
         } else {
             settings = DEFAULT_SETTINGS;
         }
+        
         return settings;
     }
 }

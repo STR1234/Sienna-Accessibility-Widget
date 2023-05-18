@@ -2,31 +2,31 @@ export default [
     {
         label: 'Font Weight',
         key: 'font-weight',
-        icon: 'format_bold',
+        icon: '/accessibility/icons/fontBoldIcon.svg',
     },
     {
         label: 'Line Height',
         key: 'line-height',
-        icon: 'format_line_spacing',
+        icon: '/accessibility/icons/lineHeightIcon.svg',
     },
     {
         label: 'Letter Spacing',
         key: 'letter-spacing',
-        icon: 'space_bar',
+        icon: '/accessibility/icons/spaceIcon.svg',
     },
     {
         label: 'Dyslexia Font',
         key: 'readable-font',
-        icon: 'spellcheck',
+        icon: '/accessibility/icons/fontIcon.svg',
     },
     {
         label: 'Highlight Links',
         key: 'highlight-links',
-        icon: 'link',
+        icon: '/accessibility/icons/highlightLinkIcon.svg',
     },
     {
         label: 'Highlight Title',
         key: 'highlight-title',
-        icon: 'title',
+        icon: '/accessibility/icons/highlightTitleIcon.svg',
     },
 ]

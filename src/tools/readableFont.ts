@@ -5,16 +5,10 @@ import { TEXT_SELECTORS } from "../enum/Selectors";
 export const readableFontConfig: IToolConfig = {
     id: "readable-font",
     selector: `html`,
-    childrenSelector: ['', '*:not(.material-icons)', ...TEXT_SELECTORS],
+    childrenSelector: ['', '*:not(.icons-sienna)', ...TEXT_SELECTORS],
     styles: {
-        'font-family': 'OpenDyslexic3,Comic Sans MS,Arial,Helvetica,sans-serif'
+        'font-family': 'OpenDyslexic3,Arial,Helvetica,sans-serif'
     },
-    css: `
-        @font-face {
-            font-family: OpenDyslexic3;
-            src: url("https://website-widgets.pages.dev/fonts/OpenDyslexic3-Regular.woff") format("woff"), url("https://website-widgets.pages.dev/fonts/OpenDyslexic3-Regular.ttf") format("truetype");
-        }
-    `
 }
 
 export default function readableFont(enable=false) {

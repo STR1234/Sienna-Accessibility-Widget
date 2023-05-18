@@ -66,7 +66,7 @@ export function injectToolCSS(config: IToolConfig) {
 
     let toolId = `asw-${ id }`
 
-    console.log(toolId, enable)
+    // console.log(toolId, enable)
 
     if(enable) {
         let css = generateCSSFromConfig(config);
